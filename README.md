@@ -8,6 +8,7 @@
 
 ### POST /ingest
 URL: http://localhost:5000/ingest
+
 Headers: Content-Type: application/json
 
 Body (raw → JSON):
@@ -32,6 +33,7 @@ Response:
 
 ### GET /status
 After getting the ingestion_id from the above POST response, test the status:
+
 URL: http://localhost:5000/status/<your_ingestion_id>
 
 Response: 
