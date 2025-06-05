@@ -11,6 +11,7 @@ URL: http://localhost:5000/ingest
 Headers: Content-Type: application/json
 
 Body (raw → JSON):
+
 {
 
   "ids": [1, 2, 3],
@@ -20,8 +21,11 @@ Body (raw → JSON):
 }
 
 Response:
+
 {
+
   "ingestion_id": "abc123-uuid"
+  
 }
 
 
