@@ -1,4 +1,4 @@
-# data-ingestion
+# Data-ingestion
 
 ## Setup
 1. Create virtual environment: `python -m venv venv`
@@ -8,25 +8,36 @@
 
 ### POST /ingest
 URL: http://localhost:5000/ingest
+
 Headers: Content-Type: application/json
 
 Body (raw → JSON):
+
 {
+
   "ids": [1, 2, 3],
+  
   "priority": "HIGH"
+  
 }
 
 Response:
+
 {
+
   "ingestion_id": "abc123-uuid"
+  
 }
 
 
-### GET/status
+
+### GET /status
 After getting the ingestion_id from the above POST response, test the status:
+
 URL: http://localhost:5000/status/<your_ingestion_id>
 
 Response: 
+
 {
   "ingestion_id": "abc123-uuid",
   "status": "triggered",
@@ -47,6 +58,7 @@ Response:
 ## 📸 Test Run Screenshot
 
 I have added the successful screenshots of the running application under the assets folder. You can access them directly from there:
+
 ![Test Results](assets/get_testing.png)
 ![Test Results](assets/post_testing.png)
 ![Test Results](assets/cmd_status.png)
