@@ -12,8 +12,11 @@ Headers: Content-Type: application/json
 
 Body (raw → JSON):
 {
+
   "ids": [1, 2, 3],
+  
   "priority": "HIGH"
+  
 }
 
 Response:
