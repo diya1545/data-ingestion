@@ -1,4 +1,4 @@
-# data-ingestion
+# Data-ingestion
 
 ## Setup
 1. Create virtual environment: `python -m venv venv`
@@ -29,11 +29,13 @@ Response:
 }
 
 
-### GET/status
+
+### GET /status
 After getting the ingestion_id from the above POST response, test the status:
 URL: http://localhost:5000/status/<your_ingestion_id>
 
 Response: 
+
 {
   "ingestion_id": "abc123-uuid",
   "status": "triggered",
