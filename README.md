@@ -46,6 +46,7 @@ Response:
 
 ## 📸 Test Run Screenshot
 
+I have added the successful screenshots of the running application under the assets folder. You can access them directly from there:
 ![Test Results](assets/get_testing.png)
 ![Test Results](assets/post_testing.png)
 ![Test Results](assets/cmd_status.png)
